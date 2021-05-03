@@ -1,6 +1,7 @@
-var askName = () => {
-  document.querySelector("#myName").innerHTML = prompt("İsminiz Nedir?");
-};
+function askName() {
+  var name = prompt("Adınız nedir?");
+  document.getElementById("myName").innerText = name;
+}
 
 function showTime() {
   var date = new Date();
@@ -25,12 +26,12 @@ function showTime() {
     day = "Cumartesi";
   }
 
-  hour = hour < 10 ? "0" + h : h;
-  minute = minute < 10 ? "0" + m : m;
-  second = second < 10 ? "0" + s : s;
+  hour = hour < 10 ? "0" + hour : hour;
+  minute = minute < 10 ? "0" + minute : minute;
+  second = second < 10 ? "0" + second : second;
 
   document.querySelector("#myClock").innerHTML =
-    hour + ":" + minute + ":" + second + "-" + day;
+    hour + ":" + minute + ":" + second + " " + day;
 
   setTimeout(showTime, 1000);
 }
