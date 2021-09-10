@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+.navbar, .about-me, .menu {
+  text-align: center;
+}
+
+.menu {
+  padding-inline-start: 10%;
+  padding-inline-end: 10%;
+  display: flex;
+  flex-wrap: nowrap | wrap | wrap-reverse;
+}
+
+article {
+  width: 24%;
+  float: left;
+  padding: 10px;
+}
+
+.about-me{
+    text-align: center;
+    width: 100%;
+    padding-left: 25%;
+    padding-right: 25%;
+    
+}
